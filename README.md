@@ -46,6 +46,7 @@ Every experiment is reproducible through a single entry point and automatically 
 1. **Custom Datasets**: Images are read from CSV manifests. Skin labels are mapped from diagnosis codes to indices; emotion labels are shifted from `1-7` to `0-6`.
 2. **Dataset-specific Normalization**: Per-channel mean/std computed for each dataset (ImageNet statistics are used for pre-trained ResNet-18).
 3. **Configurable Augmentations** (`aug_type` = `none` / `geometric` / `color` / `all`):
+   
 | Augmentation | Skin | Emotion |
 |:---|:---:|:---:|
 | Horizontal Flip | p=0.5 | p=0.5 |
